@@ -324,7 +324,17 @@ def validate(
     require_present_columns: Optional[List[str]] = None,
     require_unique_columns: Optional[List[str]] = None,
     require_nonnull_columns: Optional[List[str]] = None,
+    
+#     custom_check_columns: [func,[columns]] = None,
+#     custom_check_row: [func, rows[]] = None,
+    
+#   input eg. [do_this,['a', 'b']] 
+    
+
 ) -> ValidationCheck:
+    
+    
+    
     """
     Performs validation checks on a DataFrame.
     Returns a dict of columns that fail each check, and optionally returns an error.
