@@ -7,6 +7,8 @@ from . import utils
 from . import workflow
 from . import notifications
 from . import enrichment
+from . import dataset
+from . import sysadmin
 
 import logging
 
@@ -14,6 +16,7 @@ logging.getLogger(__name__).addHandler(logging.NullHandler())
 
 __all__ = [
     "data_io",
+    "dataset",
     "models",
     "filesystem",
     "project",
@@ -21,4 +24,5 @@ __all__ = [
     "workflow",
     "notifications",
     "enrichment",
+    "sysadmin",
 ]
